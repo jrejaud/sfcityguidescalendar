@@ -1,6 +1,6 @@
 var jsdom = require("jsdom");
-var moment = require("moment");
-moment().format();
+var moment = require("moment-timezone");
+moment().tz("America/Los_Angeles").format();
 
 var TABLE = "table.tablec";
 var URL = "http://www.sfcityguides.org/current_schedule.html";

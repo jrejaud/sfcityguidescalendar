@@ -39,7 +39,8 @@ sfcgCalendar.getCalendarAuthentication(function(auth) {
 function deleteAllEvents(auth, allEventsDeletedCallback) {
   //Get all existing events and delete them
   var q = async.queue(function(task, callback) {
-      sfcgCalendar.deleteCalendarEvent(task.auth,task.event,callback);
+		setTimeout(sfcgCalendar.deleteCalendarEvent(task.auth,task.event,callback),2000); //1s delay
+      // sfcgCalendar.deleteCalendarEvent(task.auth,task.event,callback);
   },CONCURRENCY_LIMIT);
 
   q.drain = function() {
@@ -63,7 +64,7 @@ function deleteAllEvents(auth, allEventsDeletedCallback) {
 
 function createEvents(auth, events,allEventsCreatedCallback) {
   var q = async.queue(function(task, callback) {
-		setTimeout(sfcgCalendar.createCalendarEvent(task.auth,task.event,callback),1000); //1s delay
+		setTimeout(sfcgCalendar.createCalendarEvent(task.auth,task.event,callback),2000); //1s delay
     // sfcgCalendar.createCalendarEvent(task.auth,task.event,callback);
   },CONCURRENCY_LIMIT);
 
