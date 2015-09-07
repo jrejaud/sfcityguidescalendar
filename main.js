@@ -1,7 +1,7 @@
 var schedule = require('node-schedule');
 var parser = require('cron-parser');
 var childProcess = require('child_process');
-var emailer = require(__dirname+"/emailer.js")
+// var emailer = require(__dirname+"/emailer.js")
 
 var FOUR_AM_CHRON_JOB = "0 5 * * *";
 
@@ -10,12 +10,12 @@ function calendarUpdate() {
 
   process.on("exit", function (code) {
     console.log("Calendar updated completed, code: "+code);
-    emailer.sendEmail("Calendar update completed, code: "+code);
+    // emailer.sendEmail("Calendar update completed, code: "+code);
    });
 
   process.on("error", function (err) {
-    console.log("Calendar update error: "+err);
-    emailer.sendEmail("Calendar update error: "+err);
+    console.log("Calendar update completed, with error: "+err);
+    // emailer.sendEmail("Calendar update error: "+err);
   });
 }
 
