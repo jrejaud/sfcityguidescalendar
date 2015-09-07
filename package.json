@@ -1,0 +1,35 @@
+{
+  "name": "node-js-getting-started",
+  "version": "0.0.1",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cron-parser": "^0.7.1",
+    "ejs": "2.3.3",
+    "express": "4.13.3",
+    "google-auth-library": "^0.9.6",
+    "googleapis": "^2.1.3",
+    "jsdom": "^3.1.2",
+    "moment": "^2.10.6",
+    "node-schedule": "^0.2.9",
+    "nodemailer": "^0.7.1",
+    "request": "^2.61.0",
+    "async": "^1.4.2"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
