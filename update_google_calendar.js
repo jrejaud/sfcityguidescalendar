@@ -63,7 +63,8 @@ function deleteAllEvents(auth, allEventsDeletedCallback) {
 
 function createEvents(auth, events,allEventsCreatedCallback) {
   var q = async.queue(function(task, callback) {
-    sfcgCalendar.createCalendarEvent(task.auth,task.event,callback);
+		setTimeout(sfcgCalendar.createCalendarEvent(task.auth,task.event,callback),1000); //1s delay
+    // sfcgCalendar.createCalendarEvent(task.auth,task.event,callback);
   },CONCURRENCY_LIMIT);
 
   q.drain = function() {
