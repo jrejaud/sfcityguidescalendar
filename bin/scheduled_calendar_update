@@ -1,0 +1,11 @@
+#! /app/bin/node
+var childProcess = require('child_process');
+var process = childProcess.fork("./update_google_calendar.js");
+
+process.on("exit", function (code) {
+  console.log("Calendar updated completed, code: "+code);
+ });
+
+process.on("error", function (err) {
+  console.log("Calendar update completed, with error: "+err);
+});
