@@ -1,7 +1,7 @@
 var jsdom = require("jsdom");
 var moment = require("moment-timezone");
 moment().tz("America/Los_Angeles").format();
-moment.tz.setDefault("America/Los_Angeles");
+moment.tz.setDefault("America/Los_Angeles"); //This might not be needed..
 
 var TABLE = "table.tablec";
 var URL = "http://www.sfcityguides.org/current_schedule.html";
@@ -79,8 +79,6 @@ function createEventDateTime(event) {
   startDateTime.month(monthWord);
   startDateTime.date(day);
 
-
-  console.log("Start-time: "+startDateTime.tz());
 
   //Let's assume all tours end after 1 hour (event if this might be completelly false haha)
 
