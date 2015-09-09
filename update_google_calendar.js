@@ -1,5 +1,5 @@
-var sfcgCalendar = require("./calendar.js");
-var sfcgWebsite = require("./sf_city_guides.js");
+var sfcgCalendar = require(__dirname+"/calendar.js");
+var sfcgWebsite = require(__dirname+"/sf_city_guides.js");
 var async = require('async');
 
 var CONCURRENCY_LIMIT = 1;
