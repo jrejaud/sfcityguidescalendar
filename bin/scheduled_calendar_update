@@ -1,4 +1,7 @@
-#! /app/bin/node
+#!/usr/bin/env node
+
+// Old: #! /app/bin/node
+// Old: #! /app/bin/node
 var childProcess = require('child_process');
 var process = childProcess.fork("./update_google_calendar.js");
 
