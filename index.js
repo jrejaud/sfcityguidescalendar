@@ -16,9 +16,7 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-
+app.get('/refresh', function(request, response) {
   var child = childProcess.spawn("node",["./main.js"]);
 
   child.stdout.on("data", function(data) {
@@ -27,6 +25,12 @@ app.listen(app.get('port'), function() {
 
   child.stderr.on("data", function(data) {
     console.log(""+data);
-  })
+  });
+  response.end("Refreshing calendar");
+})
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+
 
 });
