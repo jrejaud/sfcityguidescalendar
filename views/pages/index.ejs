@@ -1,24 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>San Francisco City Guides Google Calendar</title>
-</head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/vendor/fluidbox.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>SF City Guides Calendar</title>
+
+</head>
 <body>
 
-  <h1><a href="http://www.sfcityguides.org/index.html">San Francisco City Guides</a> Google Calendar</h1>
 
-  <p>Written by <a href="https://github.com/jrejaud">Jordan Rejaud</a>, <a href="https://github.com/jrejaud/sfcityguidescalendar">See the code on Github</a></p>
+	<header>
 
-  <a href="https://twitter.com/share" class="twitter-share-button" data-via="JordanRejaud">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<div id="logo-container">
+			<div id="logo"><a href="/">San Francisco (free) walking tours calendar</a></div>
+			<div id="subtitle">Based on <a href="http://www.sfcityguides.org/index.html">SF City Guides</a></div>
+		</div>
 
-  <div style='position: relative; width: 100%; height: 0px; padding-bottom: 75%;'>
-      <iframe src="https://www.google.com/calendar/embed?&amp;showTitle=0&amp;showDate=0&amp;mode=WEEK&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=4e67mrfursaidmh7ocklgrslh0%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FLos_Angeles" style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; max-height:1000px; border-width:0; frameborder="0"; scrolling="no";'></iframe>
-  </div>
-  <!-- showTabs=0&amp; -->
+	</header>
+
+	<div id="content">
+
+		<section class="row">
+			<div class="col-full">
+				<div class="calendar-container">
+					<iframe src="https://www.google.com/calendar/embed?&amp;showTitle=0&amp;showDate=0&amp;mode=WEEK&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%2322272A&amp;src=4e67mrfursaidmh7ocklgrslh0%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FLos_Angeles" style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; max-height:1000px; border-width:0; frameborder="0"; scrolling="no";'></iframe>
+				</div
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="col-full">
+				<p>
+					A silly project by <a href="https://twitter.com/JordanRejaud">Jordan Rejaud</a>, fork me on <a href="#">GitHub</a>
+				</p>
+				<p>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="JordanRejaud">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</p>
+			</div>
+		</section>
+
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+	if (!window.jQuery)
+	{
+	    document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
+	}
+	</script>
+
+	<script src="js/vendor/jquery.fluidbox.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 
 </body>
 </html>
