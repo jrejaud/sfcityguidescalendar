@@ -218,7 +218,9 @@ body {
   font-feature-settings: "kern", "liga", "frac", "pnum";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background-color: #22272a;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/sf-city-guides-calendar.appspot.com/o/golden-gate-bridge-covered-in-fog-17864.jpg?alt=media&token=93a01b59-4991-4b16-aebc-93b562666916");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ced9e0;
   font-family: "font-family: " Helvetica Neue ",Helvetica,Arial,sans-serif";
   font-size: 1em;
